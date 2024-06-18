@@ -1,0 +1,57 @@
+$primary-color: #2c3e50;
+$secondary-color: #ecf0f1;
+$accent-color: #e74c3c;
+$font-stack: 'Arial', sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: lighten($primary-color, 20%);
+  color: $secondary-color;
+
+  h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+
+  .feature {
+    background-color: $secondary-color;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+
+    h2 {
+      margin-top: 0;
+      color: $primary-color;
+    }
+
+    p {
+      color: darken($primary-color, 20%);
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
