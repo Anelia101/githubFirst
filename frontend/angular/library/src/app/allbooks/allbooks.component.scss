@@ -1,0 +1,55 @@
+$primary-color: #2c3e50;
+$secondary-color: #ecf0f1;
+$accent-color: #e74c3c;
+$font-stack: 'Arial', sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+.books {
+  text-align: center;
+  padding: 2rem 0;
+
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .book-item {
+      background-color: lighten($primary-color, 20%);
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 200px;
+      text-align: center;
+
+
+      h2 {
+        margin: 0.5rem 0 0.25rem;
+        font-size: 1.25rem;
+        color: $primary-color;
+      }
+
+      p {
+        color: darken($primary-color, 20%);
+        margin: 0;
+      }
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: $primary-color;
+  color: $secondary-color;
+}

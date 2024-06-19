@@ -5,6 +5,7 @@ import {LoginComponent} from './login/login.component';
 import {RegistrationComponent} from "./registration/registration.component";
 import {BooksComponent} from './books/books.component';
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {AllbooksComponent} from "./allbooks/allbooks.component";
 
 export const routes: Routes = [
   { path: 'home',
@@ -30,6 +31,11 @@ export const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'all',
+    title: 'All books',
+    component: AllbooksComponent
+  },
+  {
     path: '',
     redirectTo: '/login',
     pathMatch: 'full'
@@ -37,7 +43,7 @@ export const routes: Routes = [
   {
     path: '**',
     component: PageNotFoundComponent
-  }
+  },
 
 
 ];

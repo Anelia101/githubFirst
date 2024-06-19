@@ -1,1 +1,57 @@
-<p>user works!</p>
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профил - Онлайн Библиотека</title>
+  <link rel="stylesheet" href="user.component.scss">
+</head>
+<body>
+
+<main>
+  <section class="profile">
+    <h1>Добре дошли, [Име на Потребител]!</h1>
+
+    <div class="profile-section">
+      <h2>Харесани книги</h2>
+      <ul class="book-list">
+        <li>Книга 1</li>
+        <li>Книга 2</li>
+        <li>Книга 3</li>
+      </ul>
+    </div>
+
+    <div class="profile-section">
+      <h2>Лична информация</h2>
+      <p><strong>Име:</strong> [Име]</p>
+      <p><strong>Имейл:</strong> [Имейл]</p>
+    </div>
+
+    <div class="profile-section">
+      <h2>Контакти</h2>
+      <p><strong>Телефон:</strong> [Телефон]</p>
+      <p><strong>Адрес:</strong> [Адрес]</p>
+    </div>
+
+    <div class="profile-section">
+      <h2>Добави нова книга</h2>
+      <form action="#" method="POST">
+        <div class="form-gr">
+          <label for="book-name">Име на книгата:</label>
+          <input type="text" id="book-name" name="book-name" required>
+        </div>
+        <div class="form-gr">
+          <label for="book-author">Автор:</label>
+          <input type="text" id="book-author" name="book-author" required>
+        </div>
+        <button type="submit">Добави книга</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Онлайн Библиотека. Всички права запазени.</p>
+</footer>
+</body>
+</html>

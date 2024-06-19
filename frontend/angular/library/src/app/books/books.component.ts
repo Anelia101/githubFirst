@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import {RouterLink, RouterLinkActive, RouterOutlet} from "@angular/router";
-
+import { NgOptimizedImage } from '@angular/common';
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [
-    RouterLink,
-    RouterLinkActive,
-    RouterOutlet
-  ],
+  imports: [NgOptimizedImage],
   templateUrl: './books.component.html',
   styleUrl: './books.component.scss'
 })

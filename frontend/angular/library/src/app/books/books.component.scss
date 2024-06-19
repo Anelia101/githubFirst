@@ -1,0 +1,41 @@
+$primary-color: #2c3e50;
+$secondary-color: #ecf0f1;
+$accent-color: #e74c3c;
+$font-stack: 'Arial', sans-serif;
+
+body {
+  font-family: $font-stack;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+.top10 {
+  text-align: center;
+  padding: 2rem 0;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  ol {
+    list-style: decimal inside;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+
+    li {
+      background-color: $secondary-color;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
